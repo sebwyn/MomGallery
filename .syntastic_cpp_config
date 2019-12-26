@@ -1,0 +1,5 @@
+-std=c++11
+-IEngine/include
+-IGame/Include
+-I/usr/local/opt/libxml2/include/libxml2
+

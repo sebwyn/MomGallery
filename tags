@@ -1,0 +1,462 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Animation	Engine/include/Animator.hpp	/^    Animation()$/;"	f	struct:Engine::Animation
+Animation	Engine/include/Animator.hpp	/^    Animation(std::vector<Keyframe> _frames)$/;"	f	struct:Engine::Animation
+Animation	Engine/include/Animator.hpp	/^struct Animation {$/;"	s	namespace:Engine
+Animator	Engine/include/Animator.hpp	/^    Animator(Skeleton _skel)$/;"	f	class:Engine::Animator
+Animator	Engine/include/Animator.hpp	/^class Animator : public Component {$/;"	c	namespace:Engine
+Bone	Engine/include/Animator.hpp	/^    Bone() : id(0) {}$/;"	f	class:Engine::Bone
+Bone	Engine/include/Animator.hpp	/^    Bone(std::string _name, unsigned int _id, BoneTransform trans, $/;"	f	class:Engine::Bone
+Bone	Engine/include/Animator.hpp	/^    Bone(std::string _name, unsigned int _id, glm::vec3 pos, glm::quat rot, $/;"	f	class:Engine::Bone
+Bone	Engine/include/Animator.hpp	/^class Bone {$/;"	c	namespace:Engine
+BoneTransform	Engine/include/Animator.hpp	/^    BoneTransform() $/;"	f	class:Engine::BoneTransform
+BoneTransform	Engine/include/Animator.hpp	/^class BoneTransform {$/;"	c	namespace:Engine
+BoneTransform	Engine/src/Components/Animator.cpp	/^BoneTransform::BoneTransform(BoneTransform a, BoneTransform b, float p){$/;"	f	class:BoneTransform
+BoneTransform	Engine/src/Components/Animator.cpp	/^BoneTransform::BoneTransform(glm::mat4 mat){$/;"	f	class:BoneTransform
+BoneTransform	Engine/src/Components/Animator.cpp	/^BoneTransform::BoneTransform(glm::vec3 pos, glm::quat rot)$/;"	f	class:BoneTransform
+CC	Engine/src/makefile	/^CC=g++$/;"	m
+CC	Game/src/makefile	/^CC=g++$/;"	m
+CFLAGS	Engine/src/makefile	/^CFLAGS=-g -std=c++11 -I $(IDIR) $(INCLUDES)$/;"	m
+CFLAGS	Game/src/makefile	/^CFLAGS= -g -std=c++11 -I $(IDIR) -I $(ENGINC) -I\/usr\/local\/opt\/libxml2\/include\/libxml2$/;"	m
+COMPILE.c	Engine/src/makefile	/^COMPILE.c=$(CC) $(CFLAGS) $(DEPFLAGS) -c$/;"	m
+COMPILE.c	Game/src/makefile	/^COMPILE.c=$(CC) $(DEPFLAGS) $(CFLAGS) -c$/;"	m
+CORRECTION	Engine/src/ColladaLoader.cpp	/^#define CORRECTION /;"	d	file:
+CURSOR_POSITION	Engine/include/WindowEventManager.hpp	/^        CURSOR_POSITION = 2,$/;"	e	enum:Engine::WindowEventManager::events
+Camera	Engine/include/Camera.hpp	/^class Camera : public Component {$/;"	c	namespace:Engine
+Camera	Engine/src/Components/Camera.cpp	/^Camera::Camera(float _width, float _height)$/;"	f	class:Camera
+Chunk	Game/include/Chunk.hpp	/^class Chunk : public Engine::Component {$/;"	c
+Chunk	Game/src/Components/Chunk.cpp	/^Chunk::Chunk(glm::vec3 _position, unsigned int _size, Engine::ShaderProgram* _terrainShader)$/;"	f	class:Chunk
+ColladaLoader	Engine/include/ColladaLoader.hpp	/^class ColladaLoader {$/;"	c	namespace:Engine
+CollideableManager	Engine/include/CollideableManager.hpp	/^class CollideableManager {$/;"	c	namespace:Engine
+Collider	Engine/include/Collider.hpp	/^class Collider : public Component {$/;"	c	namespace:Engine
+Collider	Engine/src/Components/Collider.cpp	/^Collider::Collider(float width, float height, float depth) $/;"	f	class:Collider
+CollisionEvent	Engine/include/CollideableManager.hpp	/^    CollisionEvent() $/;"	f	struct:Engine::CollisionEvent
+CollisionEvent	Engine/include/CollideableManager.hpp	/^    CollisionEvent(GameObject* _obj, Collider* _other, std::vector<Contact> _contacts)$/;"	f	struct:Engine::CollisionEvent
+CollisionEvent	Engine/include/CollideableManager.hpp	/^struct CollisionEvent {$/;"	s	namespace:Engine
+Component	Engine/include/Component.hpp	/^class Component {$/;"	c	namespace:Engine
+Component	Engine/src/Component.cpp	/^Component::Component(std::string _name){$/;"	f	class:Component
+Contact	Engine/include/Collider.hpp	/^    Contact(glm::vec3 norm, float depth) $/;"	f	struct:Engine::Contact
+Contact	Engine/include/Collider.hpp	/^struct Contact {$/;"	s	namespace:Engine
+DEPDIR	Engine/src/makefile	/^DEPDIR=$(ODIR)\/.deps$/;"	m
+DEPDIR	Game/src/makefile	/^DEPDIR=$(ODIR)\/.dep$/;"	m
+DEPFLAGS	Engine/src/makefile	/^DEPFLAGS=-MT $@ -MMD -MP -MF $(DEPDIR)\/$*.Td$/;"	m
+DEPFLAGS	Game/src/makefile	/^DEPFLAGS=-MT $@ -MMD -MP -MF $(DEPDIR)\/$*.Td$/;"	m
+DEPS	Engine/src/makefile	/^DEPS=$(SRCS:%.cpp=$(DEPDIR)\/%.d)$/;"	m
+DEPS	Game/src/makefile	/^DEPS=$(SRCS:%.cpp=$(DEPDIR)\/%.d)$/;"	m
+DISABLED	Engine/include/Camera.hpp	/^        DISABLED,$/;"	e	enum:Engine::Camera::lookAtMode
+DebugRenderable	Game/include/DebugRenderable.hpp	/^class DebugRenderable : public Engine::Renderable {$/;"	c
+DebugRenderable	Game/src/Components/DebugRenderable.cpp	/^DebugRenderable::DebugRenderable(GLuint _texture, Engine::ShaderProgram* _program)$/;"	f	class:DebugRenderable
+ENGINC	Game/src/makefile	/^ENGINC=..\/..\/Engine\/include$/;"	m
+EXEC	Engine/src/makefile	/^EXEC=..\/lib\/Engine.o$/;"	m
+Engine	Engine/include/Animator.hpp	/^namespace Engine {$/;"	n
+Engine	Engine/include/Camera.hpp	/^namespace Engine {$/;"	n
+Engine	Engine/include/ColladaLoader.hpp	/^namespace Engine {$/;"	n
+Engine	Engine/include/CollideableManager.hpp	/^namespace Engine {$/;"	n
+Engine	Engine/include/Collider.hpp	/^namespace Engine {$/;"	n
+Engine	Engine/include/Component.hpp	/^namespace Engine {$/;"	n
+Engine	Engine/include/Game.hpp	/^namespace Engine {$/;"	n
+Engine	Engine/include/GameObject.hpp	/^namespace Engine {$/;"	n
+Engine	Engine/include/OBJLoader.hpp	/^namespace Engine {$/;"	n
+Engine	Engine/include/Renderable.hpp	/^namespace Engine {$/;"	n
+Engine	Engine/include/ShaderProgram.hpp	/^namespace Engine {$/;"	n
+Engine	Engine/include/Time.hpp	/^namespace Engine {$/;"	n
+Engine	Engine/include/Transform.hpp	/^namespace Engine {$/;"	n
+Engine	Engine/include/VAO.hpp	/^namespace Engine {$/;"	n
+Engine	Engine/include/Window.hpp	/^namespace Engine {$/;"	n
+Engine	Engine/include/WindowEventManager.hpp	/^namespace Engine {$/;"	n
+Engine	Engine/src/WindowEventManager.cpp	/^namespace Engine {$/;"	n	file:
+FINDSRC	Engine/src/makefile	/^FINDSRC=$(shell find . -type f -name "*.cpp")$/;"	m
+FINDSRC	Game/src/makefile	/^FINDSRC=$(shell find . -type f -name "*.cpp")$/;"	m
+FOV	Engine/include/Camera.hpp	/^    float FOV;$/;"	m	class:Engine::Camera
+FROM_COMPONENT	Engine/include/Component.hpp	/^#define FROM_COMPONENT$/;"	d
+FirstPersonController	Game/include/FirstPersonController.hpp	/^class FirstPersonController : public Component, public WindowEventSubscriber{$/;"	c
+FirstPersonController	Game/src/Components/FirstPersonController.cpp	/^FirstPersonController::FirstPersonController() :$/;"	f	class:FirstPersonController
+Game	Engine/include/Game.hpp	/^    Game(){}$/;"	f	class:Engine::Game
+Game	Engine/include/Game.hpp	/^class Game {$/;"	c	namespace:Engine
+GameObject	Engine/include/GameObject.hpp	/^class GameObject {$/;"	c	namespace:Engine
+GameObject	Engine/src/GameObject.cpp	/^GameObject::GameObject(std::string _name, bool _isActive){$/;"	f	class:GameObject
+IDIR	Engine/src/makefile	/^IDIR=..\/include$/;"	m
+IDIR	Game/src/makefile	/^IDIR=..\/include$/;"	m
+INCLUDES	Engine/src/makefile	/^INCLUDES=-I\/usr\/local\/opt\/libxml2\/include\/libxml2$/;"	m
+KEYBOARD_INPUT	Engine/include/WindowEventManager.hpp	/^        KEYBOARD_INPUT = 1,$/;"	e	enum:Engine::WindowEventManager::events
+Keyframe	Engine/include/Animator.hpp	/^    Keyframe(float _time, std::vector<BoneTransform> _pose)$/;"	f	struct:Engine::Keyframe
+Keyframe	Engine/include/Animator.hpp	/^struct Keyframe {$/;"	s	namespace:Engine
+LFLAGS	Engine/src/makefile	/^LFLAGS=-r -v$/;"	m
+LIBS	Engine/src/makefile	/^LIBS=-lxml2 -lGLEW -lglfw -framework OpenGL -L\/usr\/local\/opt\/libxml2\/lib$/;"	m
+LIBS	Game/src/makefile	/^LIBS=-lGLEW -lglfw -framework OpenGL -lxml2 -L\/usr\/local\/opt\/libxml2\/lib$/;"	m
+LINKER	Engine/src/makefile	/^LINKER=ld$/;"	m
+MOUSE_BUTTON	Engine/include/WindowEventManager.hpp	/^        MOUSE_BUTTON = 3,$/;"	e	enum:Engine::WindowEventManager::events
+MOUSE_SCROLL	Engine/include/WindowEventManager.hpp	/^        MOUSE_SCROLL = 4$/;"	e	enum:Engine::WindowEventManager::events
+MyGame	Game/include/MyGame.hpp	/^    MyGame(){};$/;"	f	class:MyGame
+MyGame	Game/include/MyGame.hpp	/^class MyGame : public Engine::Game {$/;"	c
+OBJ	Engine/src/makefile	/^OBJ=$(SRCS:%.cpp=$(ODIR)\/%.o)$/;"	m
+OBJ	Game/src/makefile	/^OBJ=$(SRCS:%.cpp=$(ODIR)\/%.o)$/;"	m
+OBJECT	Engine/include/Camera.hpp	/^        OBJECT$/;"	e	enum:Engine::Camera::lookAtMode
+OBJLoader	Engine/include/OBJLoader.hpp	/^    OBJLoader(){};$/;"	f	class:Engine::OBJLoader
+OBJLoader	Engine/include/OBJLoader.hpp	/^class OBJLoader{$/;"	c	namespace:Engine
+ODIR	Engine/src/makefile	/^ODIR=.obj$/;"	m
+ODIR	Game/src/makefile	/^ODIR=.obj$/;"	m
+PERLINNOISE_H	Game/include/PerlinNoise.h	/^#define PERLINNOISE_H$/;"	d
+PI	Engine/src/ColladaLoader.cpp	/^#define PI /;"	d	file:
+PI	Game/src/Components/PlayerController.cpp	/^#define PI /;"	d	file:
+POINT	Engine/include/Camera.hpp	/^        POINT,$/;"	e	enum:Engine::Camera::lookAtMode
+POSTCOMPILE	Engine/src/makefile	/^POSTCOMPILE = mv -f $(DEPDIR)\/$*.Td $(DEPDIR)\/$*.d && touch $@$/;"	m
+POSTCOMPILE	Game/src/makefile	/^POSTCOMPILE = mv -f $(DEPDIR)\/$*.Td $(DEPDIR)\/$*.d && touch $@$/;"	m
+PerlinNoise	Game/include/PerlinNoise.h	/^class PerlinNoise {$/;"	c
+PerlinNoise	Game/src/libsrc/PerlinNoise.cpp	/^PerlinNoise::PerlinNoise() {$/;"	f	class:PerlinNoise
+PerlinNoise	Game/src/libsrc/PerlinNoise.cpp	/^PerlinNoise::PerlinNoise(unsigned int seed) {$/;"	f	class:PerlinNoise
+PlayerController	Game/include/PlayerController.hpp	/^class PlayerController : public Component, public WindowEventSubscriber{$/;"	c
+PlayerController	Game/src/Components/PlayerController.cpp	/^PlayerController::PlayerController() :$/;"	f	class:PlayerController
+Renderable	Engine/include/Renderable.hpp	/^class Renderable : public Component {$/;"	c	namespace:Engine
+Renderable	Engine/src/Components/Renderable.cpp	/^Renderable::Renderable() $/;"	f	class:Renderable
+Renderable	Engine/src/Components/Renderable.cpp	/^Renderable::Renderable(VAO* _vao, ShaderProgram* _program) : Component("renderable") {$/;"	f	class:Renderable
+SRCS	Engine/src/makefile	/^SRCS=$(FINDSRC:.\/%.cpp=%.cpp)$/;"	m
+SRCS	Game/src/makefile	/^SRCS=$(FINDSRC:.\/%.cpp=%.cpp)$/;"	m
+ShaderProgram	Engine/include/ShaderProgram.hpp	/^	ShaderProgram(){};$/;"	f	class:Engine::ShaderProgram
+ShaderProgram	Engine/include/ShaderProgram.hpp	/^class ShaderProgram {$/;"	c	namespace:Engine
+ShaderProgram	Engine/src/ShaderProgram.cpp	/^ShaderProgram::ShaderProgram(const char* vPath, const char* fPath){$/;"	f	class:ShaderProgram
+ShaderProgram	Engine/src/ShaderProgram.cpp	/^ShaderProgram::ShaderProgram(const char* vPath, const char* gPath, const char* fPath){$/;"	f	class:ShaderProgram
+ShaderProgram	Engine/src/ShaderProgram.cpp	/^ShaderProgram::ShaderProgram(const char* vPath, const char* gPath, const char* fPath, int count, const char** varyings){$/;"	f	class:ShaderProgram
+Skeleton	Engine/include/Animator.hpp	/^    Skeleton() $/;"	f	struct:Engine::Skeleton
+Skeleton	Engine/include/Animator.hpp	/^    Skeleton(std::vector<Bone> _bones, unsigned int _root)$/;"	f	struct:Engine::Skeleton
+Skeleton	Engine/include/Animator.hpp	/^struct Skeleton {$/;"	s	namespace:Engine
+Terrain	Game/include/Terrain.hpp	/^class Terrain : public Engine::Component {$/;"	c
+Terrain	Game/src/Components/Terrain.cpp	/^Terrain::Terrain(Engine::ShaderProgram* program)$/;"	f	class:Terrain
+Time	Engine/include/Time.hpp	/^class Time {$/;"	c	namespace:Engine
+Transform	Engine/include/Transform.hpp	/^class Transform : public Component {$/;"	c	namespace:Engine
+Transform	Engine/src/Components/Transform.cpp	/^Transform::Transform() : Component(std::string("transform")) {$/;"	f	class:Transform
+VAO	Engine/include/VAO.hpp	/^class VAO {$/;"	c	namespace:Engine
+VAO	Engine/src/VAO.cpp	/^VAO::VAO(){$/;"	f	class:VAO
+WINDOW_RESIZE	Engine/include/WindowEventManager.hpp	/^        WINDOW_RESIZE = 0,$/;"	e	enum:Engine::WindowEventManager::events
+Window	Engine/include/Window.hpp	/^class Window : public WindowEventSubscriber {$/;"	c	namespace:Engine
+Window	Engine/src/Window.cpp	/^Window::Window(const char* title, int _width, int _height) : WindowEventSubscriber(){$/;"	f	class:Window
+WindowEventManager	Engine/include/WindowEventManager.hpp	/^class WindowEventManager{$/;"	c	namespace:Engine
+WindowEventSubscriber	Engine/include/WindowEventManager.hpp	/^    WindowEventSubscriber(){};$/;"	f	class:Engine::WindowEventSubscriber
+WindowEventSubscriber	Engine/include/WindowEventManager.hpp	/^class WindowEventSubscriber{$/;"	c	namespace:Engine
+addChild	Engine/src/GameObject.cpp	/^void GameObject::addChild(GameObject* child){$/;"	f	class:GameObject
+addCollideable	Engine/src/CollideableManager.cpp	/^void CollideableManager::addCollideable(Collider* c){$/;"	f	class:CollideableManager
+addElementBuffer	Engine/src/VAO.cpp	/^void VAO::addElementBuffer(GLshort* data, int entries){$/;"	f	class:VAO
+addFloatBuffer	Engine/src/VAO.cpp	/^void VAO::addFloatBuffer(int attrib, GLfloat* data, int entries, int entrySize){$/;"	f	class:VAO
+addGLElementBuffer	Engine/src/VAO.cpp	/^void VAO::addGLElementBuffer(GLuint buffer, int entries){$/;"	f	class:VAO
+addGLFloatBuffer	Engine/src/VAO.cpp	/^void VAO::addGLFloatBuffer(int attrib, GLuint buffer, int entries, int entrySize){$/;"	f	class:VAO
+addUIntBuffer	Engine/src/VAO.cpp	/^void VAO::addUIntBuffer(int attrib, GLuint* data, int entries, int entrySize){$/;"	f	class:VAO
+anim	Engine/include/Animator.hpp	/^    Animation* anim = NULL;$/;"	m	class:Engine::Animator
+animTime	Engine/include/Animator.hpp	/^    float animTime;$/;"	m	class:Engine::Animator
+attachComponent	Engine/src/GameObject.cpp	/^void GameObject::attachComponent(Component* c){$/;"	f	class:GameObject
+attribs	Engine/include/VAO.hpp	/^    std::vector<int> attribs;$/;"	m	class:Engine::VAO
+bind	Engine/src/VAO.cpp	/^void VAO::bind() const{$/;"	f	class:VAO
+bones	Engine/include/Animator.hpp	/^    std::vector<Bone> bones;$/;"	m	struct:Engine::Skeleton
+bones	Engine/include/Renderable.hpp	/^	std::vector<glm::mat4> bones = std::vector<glm::mat4>(0);$/;"	m	class:Engine::Renderable
+bound	Engine/include/ShaderProgram.hpp	/^	static GLuint bound;$/;"	m	class:Engine::ShaderProgram
+calcDirectionVectors	Engine/src/Components/Transform.cpp	/^void Transform::calcDirectionVectors(){$/;"	f	class:Transform
+calcGlobalPosition	Engine/src/Components/Transform.cpp	/^glm::vec3 Transform::calcGlobalPosition(){$/;"	f	class:Transform
+calcGlobalRotation	Engine/src/Components/Transform.cpp	/^glm::quat Transform::calcGlobalRotation(){$/;"	f	class:Transform
+calcGlobalScale	Engine/src/Components/Transform.cpp	/^glm::vec3 Transform::calcGlobalScale(){$/;"	f	class:Transform
+calcMatrix	Engine/src/Components/Animator.cpp	/^void BoneTransform::calcMatrix(){$/;"	f	class:BoneTransform
+calcModelMatrix	Engine/src/Components/Transform.cpp	/^glm::mat4 Transform::calcModelMatrix(){$/;"	f	class:Transform
+calcOverlap	Engine/src/Components/Collider.cpp	/^float calcOverlap(float min1, float max1, float min2, float max2){$/;"	f
+calcRotation	Game/src/Components/FirstPersonController.cpp	/^void FirstPersonController::calcRotation(float dt){$/;"	f	class:FirstPersonController
+calcRotation	Game/src/Components/PlayerController.cpp	/^void PlayerController::calcRotation(float dt){$/;"	f	class:PlayerController
+calcTranslation	Game/src/Components/FirstPersonController.cpp	/^void FirstPersonController::calcTranslation(float dt){$/;"	f	class:FirstPersonController
+calcTranslation	Game/src/Components/PlayerController.cpp	/^void PlayerController::calcTranslation(float dt){$/;"	f	class:PlayerController
+calculateMatrices	Engine/src/Components/Camera.cpp	/^void Camera::calculateMatrices(){$/;"	f	class:Camera
+camera	Engine/include/Game.hpp	/^    GameObject* camera;$/;"	m	class:Engine::Game
+camera	Game/include/PlayerController.hpp	/^    GameObject* camera;$/;"	m	class:PlayerController
+children	Engine/include/Animator.hpp	/^    std::vector<unsigned int> children;$/;"	m	class:Engine::Bone
+children	Engine/include/GameObject.hpp	/^    std::vector<GameObject*> children;$/;"	m	class:Engine::GameObject
+cleanup	Engine/src/Game.cpp	/^void Game::cleanup(){$/;"	f	class:Game
+clear	Engine/src/Window.cpp	/^void Window::clear() const {$/;"	f	class:Window
+clone	Engine/include/Component.hpp	/^    virtual Component* clone(){return NULL;} \/\/this will be used to copy GameObjects$/;"	f	class:Engine::Component
+closed	Engine/include/Window.hpp	/^    inline bool closed() const {return ((glfwWindowShouldClose(window) != 0)||shouldClose);};$/;"	f	class:Engine::Window
+collider	Engine/include/CollideableManager.hpp	/^        Collider* collider;$/;"	m	struct:Engine::CollideableManager::dataNode
+collision_update	Engine/src/Components/Collider.cpp	/^void Collider::collision_update(){$/;"	f	class:Collider
+color	Engine/include/Renderable.hpp	/^    glm::vec3 color = glm::vec3(1, 1, 1);$/;"	m	class:Engine::Renderable
+compileShader	Engine/src/ShaderProgram.cpp	/^GLuint ShaderProgram::compileShader(GLenum type, const char* source){$/;"	f	class:ShaderProgram
+components	Engine/include/GameObject.hpp	/^    std::vector<Component*> components;$/;"	m	class:Engine::GameObject
+contacts	Engine/include/CollideableManager.hpp	/^    std::vector<Contact> contacts; $/;"	m	struct:Engine::CollisionEvent
+created	Engine/include/GameObject.hpp	/^    bool created; \/\/set if allocated$/;"	m	class:Engine::GameObject
+cubeVAO	Game/include/MyGame.hpp	/^    Engine::VAO *cubeVAO, *playerVAO, *robotVAO;$/;"	m	class:MyGame
+cursorCallback	Engine/src/WindowEventManager.cpp	/^void cursorCallback(GLFWwindow* window, double xpos, double ypos){$/;"	f	namespace:Engine
+cursorEnabled	Engine/include/Window.hpp	/^    bool cursorEnabled;$/;"	m	class:Engine::Window
+data	Engine/include/CollideableManager.hpp	/^    static std::vector<dataNode> data;$/;"	m	class:Engine::CollideableManager
+dataNode	Engine/include/CollideableManager.hpp	/^    dataNode(Collider* _collider) $/;"	f	struct:Engine::CollideableManager::dataNode
+dataNode	Engine/include/CollideableManager.hpp	/^    struct dataNode {$/;"	s	class:Engine::CollideableManager
+deltaUpdate	Engine/include/Time.hpp	/^    static double deltaUpdate;$/;"	m	class:Engine::Time
+deltaUpdate	Engine/src/Time.cpp	/^double Time::deltaUpdate;$/;"	m	class:Time	file:
+didCollide	Engine/src/Components/Collider.cpp	/^std::vector<Contact> Collider::didCollide(Collider* o_col){$/;"	f	class:Collider
+dimensions	Engine/include/Collider.hpp	/^    glm::vec3 dimensions;$/;"	m	class:Engine::Collider
+disableAttribs	Engine/src/VAO.cpp	/^void VAO::disableAttribs() const{$/;"	f	class:VAO
+disableCursor	Engine/src/Window.cpp	/^void Window::disableCursor(){$/;"	f	class:Window
+disableLookAt	Engine/src/Components/Camera.cpp	/^void Camera::disableLookAt(){$/;"	f	class:Camera
+draw	Engine/src/VAO.cpp	/^void VAO::draw() const{$/;"	f	class:VAO
+duration	Engine/include/Animator.hpp	/^    float duration;$/;"	m	struct:Engine::Animation
+ebo	Engine/include/VAO.hpp	/^    GLuint ebo;$/;"	m	class:Engine::VAO
+enableAttribs	Engine/src/VAO.cpp	/^void VAO::enableAttribs() const{$/;"	f	class:VAO
+enableCursor	Engine/src/Window.cpp	/^void Window::enableCursor(){$/;"	f	class:Window
+events	Engine/include/CollideableManager.hpp	/^        CollisionEvent events[10]; $/;"	m	struct:Engine::CollideableManager::dataNode
+events	Engine/include/WindowEventManager.hpp	/^    enum events {$/;"	g	class:Engine::WindowEventManager
+eventsSize	Engine/include/CollideableManager.hpp	/^        int eventsSize;$/;"	m	struct:Engine::CollideableManager::dataNode
+fade	Game/src/libsrc/PerlinNoise.cpp	/^double PerlinNoise::fade(double t) { $/;"	f	class:PerlinNoise
+finish	Engine/include/Game.hpp	/^    virtual void finish(){return;}$/;"	f	class:Engine::Game
+first	Game/include/Chunk.hpp	/^    static bool first;$/;"	m	class:Chunk
+first	Game/include/DebugRenderable.hpp	/^    static bool first;$/;"	m	class:DebugRenderable
+first	Game/src/Components/Chunk.cpp	/^bool Chunk::first = true;$/;"	m	class:Chunk	file:
+first	Game/src/Components/DebugRenderable.cpp	/^bool DebugRenderable::first = true;$/;"	m	class:DebugRenderable	file:
+forward	Engine/include/Transform.hpp	/^    glm::vec3 forward;$/;"	m	class:Engine::Transform
+frames	Engine/include/Animator.hpp	/^    std::vector<Keyframe> frames;$/;"	m	struct:Engine::Animation
+genDensities	Game/include/Chunk.hpp	/^    static Engine::ShaderProgram* genDensities;$/;"	m	class:Chunk
+genDensities	Game/src/Components/Chunk.cpp	/^Engine::ShaderProgram* Chunk::genDensities;$/;"	m	class:Chunk	file:
+genFilledCells	Game/include/Chunk.hpp	/^    static Engine::ShaderProgram* genFilledCells;$/;"	m	class:Chunk
+genFilledCells	Game/src/Components/Chunk.cpp	/^Engine::ShaderProgram* Chunk::genFilledCells;$/;"	m	class:Chunk	file:
+genIndices	Game/include/Chunk.hpp	/^    static Engine::ShaderProgram* genIndices;$/;"	m	class:Chunk
+genIndices	Game/src/Components/Chunk.cpp	/^Engine::ShaderProgram* Chunk::genIndices;$/;"	m	class:Chunk	file:
+genVertMarkers	Game/include/Chunk.hpp	/^    static Engine::ShaderProgram* genVertMarkers;$/;"	m	class:Chunk
+genVertMarkers	Game/src/Components/Chunk.cpp	/^Engine::ShaderProgram* Chunk::genVertMarkers;$/;"	m	class:Chunk	file:
+genVerts	Game/include/Chunk.hpp	/^    static Engine::ShaderProgram* genVerts;$/;"	m	class:Chunk
+genVerts	Game/src/Components/Chunk.cpp	/^Engine::ShaderProgram* Chunk::genVerts;$/;"	m	class:Chunk	file:
+getActive	Engine/include/GameObject.hpp	/^    bool getActive(){return isActive;} $/;"	f	class:Engine::GameObject
+getBind	Engine/include/Animator.hpp	/^    inline glm::mat4 getBind() const {return inverseBind;}$/;"	f	class:Engine::Bone
+getChild	Engine/src/GameObject.cpp	/^GameObject* GameObject::getChild(int index){$/;"	f	class:GameObject
+getChild	Engine/src/GameObject.cpp	/^GameObject* GameObject::getChild(std::string _name){$/;"	f	class:GameObject
+getCollisions	Engine/src/CollideableManager.cpp	/^std::vector<CollisionEvent> CollideableManager::getCollisions(Collider* c){$/;"	f	class:CollideableManager
+getComponent	Engine/src/GameObject.cpp	/^Component* GameObject::getComponent(std::string name){$/;"	f	class:GameObject
+getDeltaUpdate	Engine/include/Time.hpp	/^    inline static float getDeltaUpdate() {return deltaUpdate;}$/;"	f	class:Engine::Time
+getEnabled	Engine/include/Component.hpp	/^    bool getEnabled() {return isEnabled;}$/;"	f	class:Engine::Component
+getForward	Engine/include/Transform.hpp	/^    inline glm::vec3 getForward() const {return forward;}$/;"	f	class:Engine::Transform
+getHeight	Engine/include/Camera.hpp	/^    inline float getHeight() const {return height;};$/;"	f	class:Engine::Camera
+getHeight	Engine/include/Window.hpp	/^    inline int getHeight() const {return height;};$/;"	f	class:Engine::Window
+getID	Engine/include/VAO.hpp	/^    inline GLuint getID() const {return vaoID;};$/;"	f	class:Engine::VAO
+getIndex	Engine/src/ColladaLoader.cpp	/^int getIndex(std::vector<std::string> names, std::string name){$/;"	f
+getInverseBind	Engine/include/Animator.hpp	/^    inline glm::mat4 getInverseBind() const {return inverseBind;}$/;"	f	class:Engine::Bone
+getMatrix	Engine/include/Animator.hpp	/^    inline glm::mat4 getMatrix() const {return matrix;}$/;"	f	class:Engine::Bone
+getMatrix	Engine/include/Animator.hpp	/^    inline glm::mat4 getMatrix() const {return matrix;}$/;"	f	class:Engine::BoneTransform
+getName	Engine/include/Component.hpp	/^    std::string getName(){return name;}$/;"	f	class:Engine::Component
+getName	Engine/include/GameObject.hpp	/^    std::string getName(){return name;}$/;"	f	class:Engine::GameObject
+getNodeByProp	Engine/src/ColladaLoader.cpp	/^xmlNode* getNodeByProp(xmlNode* parent, std::string prop, std::string val){$/;"	f
+getNodesIn	Engine/src/ColladaLoader.cpp	/^std::vector<xmlNode*> getNodesIn(xmlNode* node, std::string name){$/;"	f
+getNodesRec	Engine/src/ColladaLoader.cpp	/^std::vector<xmlNode*> getNodesRec(xmlNode* parent, std::string name){$/;"	f
+getObject	Engine/include/Collider.hpp	/^    inline GameObject* getObject() const {return object;}$/;"	f	class:Engine::Collider
+getParent	Engine/include/GameObject.hpp	/^    GameObject* getParent(){return parent;}$/;"	f	class:Engine::GameObject
+getPosition	Engine/include/Animator.hpp	/^    inline glm::vec3 getPosition() const {return position;}$/;"	f	class:Engine::BoneTransform
+getPosition	Engine/include/Transform.hpp	/^    inline glm::vec3 getPosition() const {return position;}$/;"	f	class:Engine::Transform
+getProjectionMatrix	Engine/include/Camera.hpp	/^    inline glm::mat4 getProjectionMatrix() const {return projectionMatrix;};$/;"	f	class:Engine::Camera
+getRight	Engine/include/Transform.hpp	/^    inline glm::vec3 getRight() const {return right;}$/;"	f	class:Engine::Transform
+getRotation	Engine/include/Animator.hpp	/^    inline glm::quat getRotation() const {return rotation;}$/;"	f	class:Engine::BoneTransform
+getRotation	Engine/include/Transform.hpp	/^    inline glm::quat getRotation() const {return rotation;}$/;"	f	class:Engine::Transform
+getScale	Engine/include/Transform.hpp	/^    inline glm::vec3 getScale() const {return size;}$/;"	f	class:Engine::Transform
+getShown	Engine/include/Renderable.hpp	/^    inline bool getShown() const {return isShown;}$/;"	f	class:Engine::Renderable
+getUp	Engine/include/Transform.hpp	/^    inline glm::vec3 getUp() const {return up;}$/;"	f	class:Engine::Transform
+getVerts	Engine/include/Collider.hpp	/^	inline const glm::vec3* getVerts() const {return &verts[0];}$/;"	f	class:Engine::Collider
+getViewDirection	Engine/include/Camera.hpp	/^    inline glm::vec3 getViewDirection() const {return viewDirection;};$/;"	f	class:Engine::Camera
+getViewMatrix	Engine/include/Camera.hpp	/^    inline glm::mat4 getViewMatrix() const {return viewMatrix;};$/;"	f	class:Engine::Camera
+getWidth	Engine/include/Camera.hpp	/^    inline float getWidth() const {return width;};$/;"	f	class:Engine::Camera
+getWidth	Engine/include/Window.hpp	/^    inline int getWidth() const {return width;};$/;"	f	class:Engine::Window
+getWindow	Engine/include/Window.hpp	/^    inline GLFWwindow* getWindow() const {return window;};$/;"	f	class:Engine::Window
+grad	Game/src/libsrc/PerlinNoise.cpp	/^double PerlinNoise::grad(int hash, double x, double y, double z) {$/;"	f	class:PerlinNoise
+head	Game/include/PlayerController.hpp	/^    GameObject* head;$/;"	m	class:PlayerController
+height	Engine/include/Camera.hpp	/^    float width, height;$/;"	m	class:Engine::Camera
+height	Engine/include/Window.hpp	/^    int width, height;$/;"	m	class:Engine::Window
+id	Engine/include/Animator.hpp	/^    unsigned int id;$/;"	m	class:Engine::Bone
+init	Engine/src/Game.cpp	/^void Game::init(){$/;"	f	class:Game
+inverseBind	Engine/include/Animator.hpp	/^    glm::mat4 inverseBind; \/\/stores initial position as inverse matrix$/;"	m	class:Engine::Bone
+isActive	Engine/include/GameObject.hpp	/^    bool isActive;$/;"	m	class:Engine::GameObject
+isEnabled	Engine/include/Component.hpp	/^    bool isEnabled;$/;"	m	class:Engine::Component
+isShown	Engine/include/Renderable.hpp	/^    bool isShown;$/;"	m	class:Engine::Renderable
+keyCallback	Engine/src/WindowEventManager.cpp	/^void keyCallback(GLFWwindow* window,int key, int scancode, int action, int mods){$/;"	f	namespace:Engine
+lastTime	Game/include/FirstPersonController.hpp	/^    float lastTime;$/;"	m	class:FirstPersonController
+lastTime	Game/include/PlayerController.hpp	/^    float lastTime;$/;"	m	class:PlayerController
+lastUpdate	Engine/include/Time.hpp	/^    static std::chrono::time_point<std::chrono::high_resolution_clock> lastUpdate; $/;"	m	class:Engine::Time
+lastUpdate	Engine/src/Time.cpp	/^std::chrono::time_point<std::chrono::high_resolution_clock> Time::lastUpdate;$/;"	m	class:Time	file:
+lateUpdate	Engine/include/Component.hpp	/^    virtual void lateUpdate(){return;}$/;"	f	class:Engine::Component
+lateUpdate	Engine/src/Components/Camera.cpp	/^void Camera::lateUpdate(){$/;"	f	class:Camera
+lateUpdate	Engine/src/GameObject.cpp	/^void GameObject::lateUpdate(){$/;"	f	class:GameObject
+lerp	Game/src/libsrc/PerlinNoise.cpp	/^double PerlinNoise::lerp(double t, double a, double b) { $/;"	f	class:PerlinNoise
+loadAnimation	Engine/src/ColladaLoader.cpp	/^Animation ColladaLoader::loadAnimation(std::string file, Skeleton sk){$/;"	f	class:ColladaLoader
+loadModel	Engine/src/ColladaLoader.cpp	/^void ColladaLoader::loadModel(std::string file, VAO* vao){ $/;"	f	class:ColladaLoader
+loadOBJ	Engine/src/OBJLoader.cpp	/^bool OBJLoader::loadOBJ(VAO* vao, const char* path){$/;"	f	class:OBJLoader
+loadShader	Engine/src/ShaderProgram.cpp	/^GLuint ShaderProgram::loadShader(const char* vPath, const char* fPath, const char* gPath, unsigned int count, const char** varyings){$/;"	f	class:ShaderProgram
+loadSkeleton	Engine/src/ColladaLoader.cpp	/^Skeleton ColladaLoader::loadSkeleton(std::string file){$/;"	f	class:ColladaLoader
+lookAt	Engine/src/Components/Camera.cpp	/^void Camera::lookAt(GameObject* object){$/;"	f	class:Camera
+lookAt	Engine/src/Components/Camera.cpp	/^void Camera::lookAt(float x, float y, float z){$/;"	f	class:Camera
+lookAtMode	Engine/include/Camera.hpp	/^    enum lookAtMode {$/;"	g	class:Engine::Camera
+lookAtState	Engine/include/Camera.hpp	/^    lookAtMode lookAtState;$/;"	m	class:Engine::Camera
+m_vao	Game/include/Chunk.hpp	/^    Engine::VAO* m_vao = NULL;$/;"	m	class:Chunk
+main	Game/src/main.cpp	/^int main(){$/;"	f
+mainloop	Engine/src/Game.cpp	/^void Game::mainloop(){$/;"	f	class:Game
+matrix	Engine/include/Animator.hpp	/^    glm::mat4 matrix;$/;"	m	class:Engine::Bone
+matrix	Engine/include/Animator.hpp	/^    glm::mat4 matrix;$/;"	m	class:Engine::BoneTransform
+mouseClickCallback	Engine/src/WindowEventManager.cpp	/^void mouseClickCallback(GLFWwindow* window, int button, int action, int mod){$/;"	f	namespace:Engine
+mouseScrollCallback	Engine/src/WindowEventManager.cpp	/^void mouseScrollCallback(GLFWwindow* window, double xoffset, double yoffset){$/;"	f	namespace:Engine
+mouseSpeed	Game/include/FirstPersonController.hpp	/^    float mouseSpeed;$/;"	m	class:FirstPersonController
+mouseSpeed	Game/include/PlayerController.hpp	/^    float mouseSpeed;$/;"	m	class:PlayerController
+move	Game/include/FirstPersonController.hpp	/^    vec3 move;$/;"	m	class:FirstPersonController
+move	Game/include/PlayerController.hpp	/^    vec3 move;$/;"	m	class:PlayerController
+name	Engine/include/Animator.hpp	/^    std::string name; \/\/reference for potentially reversing keyframes$/;"	m	class:Engine::Bone
+name	Engine/include/Component.hpp	/^    std::string name;   $/;"	m	class:Engine::Component
+name	Engine/include/GameObject.hpp	/^    std::string name;$/;"	m	class:Engine::GameObject
+noise	Game/src/libsrc/PerlinNoise.cpp	/^double PerlinNoise::noise(double x, double y, double z) {$/;"	f	class:PerlinNoise
+normal	Engine/include/Collider.hpp	/^    glm::vec3 normal;$/;"	m	struct:Engine::Contact
+obj	Engine/include/CollideableManager.hpp	/^    GameObject* obj; $/;"	m	struct:Engine::CollisionEvent
+object	Engine/include/Component.hpp	/^    GameObject* object;$/;"	m	class:Engine::Component
+onCursorMove	Engine/include/WindowEventManager.hpp	/^    virtual void onCursorMove(double xpos, double ypos){return;};$/;"	f	class:Engine::WindowEventSubscriber
+onCursorMove	Game/src/Components/FirstPersonController.cpp	/^void FirstPersonController::onCursorMove(double xpos, double ypos) {$/;"	f	class:FirstPersonController
+onCursorMove	Game/src/Components/PlayerController.cpp	/^void PlayerController::onCursorMove(double xpos, double ypos) {$/;"	f	class:PlayerController
+onDisable	Engine/include/Component.hpp	/^    virtual void onDisable(){return;}$/;"	f	class:Engine::Component
+onDisable	Engine/src/Components/Collider.cpp	/^void Collider::onDisable(){$/;"	f	class:Collider
+onEnable	Engine/include/Component.hpp	/^    virtual void onEnable(){return;}$/;"	f	class:Engine::Component
+onEnable	Engine/src/Components/Collider.cpp	/^void Collider::onEnable(){$/;"	f	class:Collider
+onKey	Engine/include/WindowEventManager.hpp	/^    virtual void onKey(int key, int scancode, int action, int mods){return;};$/;"	f	class:Engine::WindowEventSubscriber
+onKey	Engine/src/Window.cpp	/^void Window::onKey(int key, int scancode, int action, int mods){$/;"	f	class:Window
+onKey	Game/src/Components/FirstPersonController.cpp	/^void FirstPersonController::onKey(int key, int scancode, int action, int mods) {$/;"	f	class:FirstPersonController
+onKey	Game/src/Components/PlayerController.cpp	/^void PlayerController::onKey(int key, int scancode, int action, int mods) {$/;"	f	class:PlayerController
+onMouseClick	Engine/include/WindowEventManager.hpp	/^    virtual void onMouseClick(int button, int action, int mod){return;};$/;"	f	class:Engine::WindowEventSubscriber
+onMouseScroll	Engine/include/WindowEventManager.hpp	/^    virtual void onMouseScroll(double xoffset, double yoffset){return;};$/;"	f	class:Engine::WindowEventSubscriber
+onWindowResize	Engine/include/WindowEventManager.hpp	/^    virtual void onWindowResize(int width, int height){return;};$/;"	f	class:Engine::WindowEventSubscriber
+onWindowResize	Engine/src/Window.cpp	/^void Window::onWindowResize(int width, int height){$/;"	f	class:Window
+other	Engine/include/CollideableManager.hpp	/^    Collider* other;$/;"	m	struct:Engine::CollisionEvent
+p	Game/include/PerlinNoise.h	/^	std::vector<int> p;$/;"	m	class:PerlinNoise
+parent	Engine/include/GameObject.hpp	/^    GameObject* parent;$/;"	m	class:Engine::GameObject
+parseJointLayer	Engine/src/ColladaLoader.cpp	/^unsigned int ColladaLoader::parseJointLayer(xmlNode* joint, glm::mat4 parentMat, std::vector<Bone> & bones, std::vector<std::string> jointNames, std::vector<glm::mat4> jointBinds, bool isRoot){$/;"	f	class:ColladaLoader
+penDepth	Engine/include/Collider.hpp	/^    float penDepth;$/;"	m	struct:Engine::Contact
+playerVAO	Game/include/MyGame.hpp	/^    Engine::VAO *cubeVAO, *playerVAO, *robotVAO;$/;"	m	class:MyGame
+pose	Engine/include/Animator.hpp	/^    std::vector<BoneTransform> pose;$/;"	m	struct:Engine::Keyframe
+position	Engine/include/Animator.hpp	/^    glm::vec3 position;$/;"	m	class:Engine::BoneTransform
+position	Engine/include/Transform.hpp	/^    glm::vec3 position;$/;"	m	class:Engine::Transform
+position	Game/include/Chunk.hpp	/^    glm::vec3 position;$/;"	m	class:Chunk
+program	Game/include/DebugRenderable.hpp	/^    static Engine::ShaderProgram* program;$/;"	m	class:DebugRenderable
+program	Game/src/Components/DebugRenderable.cpp	/^Engine::ShaderProgram* DebugRenderable::program;$/;"	m	class:DebugRenderable	file:
+programID	Engine/include/ShaderProgram.hpp	/^    GLuint programID;$/;"	m	class:Engine::ShaderProgram
+projectionMatrix	Engine/include/Camera.hpp	/^    glm::mat4 projectionMatrix;$/;"	m	class:Engine::Camera
+readController	Engine/src/ColladaLoader.cpp	/^void ColladaLoader::readController(xmlNode* controller, $/;"	f	class:ColladaLoader
+readFloatSource	Engine/src/ColladaLoader.cpp	/^std::vector<float> ColladaLoader::readFloatSource(xmlNode* source){$/;"	f	class:ColladaLoader
+readMat	Engine/src/ColladaLoader.cpp	/^glm::mat4 ColladaLoader::readMat(xmlNode* source){$/;"	f	class:ColladaLoader
+readMat4Source	Engine/src/ColladaLoader.cpp	/^std::vector<glm::mat4> ColladaLoader::readMat4Source(xmlNode* source){$/;"	f	class:ColladaLoader
+readNameSource	Engine/src/ColladaLoader.cpp	/^std::vector<std::string> ColladaLoader::readNameSource(xmlNode* source){$/;"	f	class:ColladaLoader
+readVec3Source	Engine/src/ColladaLoader.cpp	/^std::vector<glm::vec3> ColladaLoader::readVec3Source(xmlNode* source){$/;"	f	class:ColladaLoader
+remove	Engine/src/ShaderProgram.cpp	/^void ShaderProgram::remove(){$/;"	f	class:ShaderProgram
+removeChild	Engine/src/GameObject.cpp	/^void GameObject::removeChild(GameObject* child){$/;"	f	class:GameObject
+removeCollideable	Engine/src/CollideableManager.cpp	/^void CollideableManager::removeCollideable(Collider* c){$/;"	f	class:CollideableManager
+render	Engine/src/Components/Renderable.cpp	/^void Renderable::render(glm::mat4 projectionMatrix, glm::mat4 viewMatrix){$/;"	f	class:Renderable
+render	Engine/src/GameObject.cpp	/^void GameObject::render(glm::mat4 projection,glm::mat4 view){$/;"	f	class:GameObject
+render	Game/src/Components/DebugRenderable.cpp	/^void DebugRenderable::render(glm::mat4 projectionMatrix, glm::mat4 viewMatrix){$/;"	f	class:DebugRenderable
+right	Engine/include/Transform.hpp	/^    glm::vec3 right;$/;"	m	class:Engine::Transform
+robotVAO	Game/include/MyGame.hpp	/^    Engine::VAO *cubeVAO, *playerVAO, *robotVAO;$/;"	m	class:MyGame
+root	Engine/include/Animator.hpp	/^    unsigned int root;$/;"	m	struct:Engine::Skeleton
+root	Engine/include/Game.hpp	/^    GameObject* root;$/;"	m	class:Engine::Game
+rotate	Engine/src/Components/Transform.cpp	/^void Transform::rotate(float x, float y, float z){$/;"	f	class:Transform
+rotate	Game/include/FirstPersonController.hpp	/^    vec2 rotate;$/;"	m	class:FirstPersonController
+rotate	Game/include/PlayerController.hpp	/^    vec2 rotate;$/;"	m	class:PlayerController
+rotation	Engine/include/Animator.hpp	/^    glm::quat rotation;$/;"	m	class:Engine::BoneTransform
+rotation	Engine/include/Transform.hpp	/^    glm::quat rotation;$/;"	m	class:Engine::Transform
+rotationVector	Game/include/FirstPersonController.hpp	/^    vec2 rotationVector;$/;"	m	class:FirstPersonController
+rotationVector	Game/include/PlayerController.hpp	/^    vec2 rotationVector;$/;"	m	class:PlayerController
+run	Engine/src/Game.cpp	/^void Game::run(){$/;"	f	class:Game
+scale	Engine/src/Components/Transform.cpp	/^void Transform::scale(float x, float y, float z){$/;"	f	class:Transform
+setActive	Engine/src/GameObject.cpp	/^void GameObject::setActive(bool state){$/;"	f	class:GameObject
+setAnimation	Engine/include/Animator.hpp	/^    void setAnimation(Animation* a){anim = a;$/;"	f	class:Engine::Animator
+setBoneTransforms	Engine/include/Renderable.hpp	/^	inline void setBoneTransforms(std::vector<glm::mat4> _bones){bones = _bones;}$/;"	f	class:Engine::Renderable
+setColor	Engine/src/Components/Renderable.cpp	/^void Renderable::setColor(float r, float g, float b){$/;"	f	class:Renderable
+setEnabled	Engine/src/Component.cpp	/^void Component::setEnabled(bool state){$/;"	f	class:Component
+setFOV	Engine/src/Components/Camera.cpp	/^void Camera::setFOV(float fov){$/;"	f	class:Camera
+setMatrix	Engine/src/Components/Animator.cpp	/^void Bone::setMatrix(glm::mat4 newPosition){$/;"	f	class:Bone
+setParent	Engine/src/GameObject.cpp	/^void GameObject::setParent(GameObject* _parent){$/;"	f	class:GameObject
+setPosition	Engine/src/Components/Transform.cpp	/^void Transform::setPosition(float x, float y, float z){$/;"	f	class:Transform
+setRotation	Engine/src/Components/Transform.cpp	/^void Transform::setRotation(float x, float y, float z){$/;"	f	class:Transform
+setRotation	Engine/src/Components/Transform.cpp	/^void Transform::setRotation(glm::quat _rotation){$/;"	f	class:Transform
+setScale	Engine/src/Components/Transform.cpp	/^void Transform::setScale(float x, float y, float z){$/;"	f	class:Transform
+setShaderProgram	Engine/src/Components/Renderable.cpp	/^void Renderable::setShaderProgram(ShaderProgram* program){$/;"	f	class:Renderable
+setShown	Engine/include/Renderable.hpp	/^    void setShown(bool state){isShown = state;}$/;"	f	class:Engine::Renderable
+setUniformFloat	Engine/src/ShaderProgram.cpp	/^void ShaderProgram::setUniformFloat(float data, std::string uniformName){$/;"	f	class:ShaderProgram
+setUniformIVec3	Engine/src/ShaderProgram.cpp	/^void ShaderProgram::setUniformIVec3(glm::ivec3 v, std::string uniformName){$/;"	f	class:ShaderProgram
+setUniformInt	Engine/src/ShaderProgram.cpp	/^void ShaderProgram::setUniformInt(int data, std::string uniformName){$/;"	f	class:ShaderProgram
+setUniformMat4	Engine/src/ShaderProgram.cpp	/^void ShaderProgram::setUniformMat4(glm::mat4 matrix, std::string uniformName){$/;"	f	class:ShaderProgram
+setUniformMat4Array	Engine/src/ShaderProgram.cpp	/^void ShaderProgram::setUniformMat4Array(std::vector<glm::mat4> matrices, std::string uniformName){$/;"	f	class:ShaderProgram
+setUniformVec3	Engine/src/ShaderProgram.cpp	/^void ShaderProgram::setUniformVec3(glm::vec3 v, std::string uniformName){$/;"	f	class:ShaderProgram
+setVAO	Engine/src/Components/Renderable.cpp	/^void Renderable::setVAO(VAO* _vao){$/;"	f	class:Renderable
+setWindow	Engine/src/WindowEventManager.cpp	/^void WindowEventManager::setWindow(GLFWwindow* _window){$/;"	f	class:Engine::WindowEventManager
+shaderProgram	Engine/include/Renderable.hpp	/^    ShaderProgram* shaderProgram;$/;"	m	class:Engine::Renderable
+shouldClose	Engine/include/Window.hpp	/^    bool shouldClose;$/;"	m	class:Engine::Window
+simple	Game/include/MyGame.hpp	/^    Engine::ShaderProgram *simpleAnimated, *simple;$/;"	m	class:MyGame
+simpleAnimated	Game/include/MyGame.hpp	/^    Engine::ShaderProgram *simpleAnimated, *simple;$/;"	m	class:MyGame
+size	Engine/include/Transform.hpp	/^    glm::vec3 size;$/;"	m	class:Engine::Transform
+size	Game/include/Chunk.hpp	/^    unsigned int size;$/;"	m	class:Chunk
+skel	Engine/include/Animator.hpp	/^    Skeleton skel;$/;"	m	class:Engine::Animator
+speed	Game/include/FirstPersonController.hpp	/^    float speed;$/;"	m	class:FirstPersonController
+speed	Game/include/PlayerController.hpp	/^    float speed;$/;"	m	class:PlayerController
+splatIndices	Game/include/Chunk.hpp	/^    static Engine::ShaderProgram* splatIndices;$/;"	m	class:Chunk
+splatIndices	Game/src/Components/Chunk.cpp	/^Engine::ShaderProgram* Chunk::splatIndices;$/;"	m	class:Chunk	file:
+start	Engine/include/Component.hpp	/^    virtual void start(){return;}$/;"	f	class:Engine::Component
+start	Engine/include/Game.hpp	/^    virtual void start(){return;};$/;"	f	class:Engine::Game
+start	Engine/src/Components/Camera.cpp	/^void Camera::start(){$/;"	f	class:Camera
+start	Engine/src/Components/Collider.cpp	/^void Collider::start(){$/;"	f	class:Collider
+start	Engine/src/ShaderProgram.cpp	/^void ShaderProgram::start(){$/;"	f	class:ShaderProgram
+start	Engine/src/Time.cpp	/^void Time::start(){$/;"	f	class:Time
+start	Game/src/Components/Chunk.cpp	/^void Chunk::start(){$/;"	f	class:Chunk
+start	Game/src/Components/FirstPersonController.cpp	/^void FirstPersonController::start(){$/;"	f	class:FirstPersonController
+start	Game/src/Components/PlayerController.cpp	/^void PlayerController::start(){$/;"	f	class:PlayerController
+start	Game/src/Components/Terrain.cpp	/^void Terrain::start(){$/;"	f	class:Terrain
+start	Game/src/MyGame.cpp	/^void MyGame::start(){$/;"	f	class:MyGame
+startPoint	Engine/include/Time.hpp	/^    static std::chrono::time_point<std::chrono::high_resolution_clock> startPoint; $/;"	m	class:Engine::Time
+subscribe	Engine/src/WindowEventManager.cpp	/^void WindowEventManager::subscribe(events eventList, WindowEventSubscriber* subscriber){$/;"	f	class:Engine::WindowEventManager
+subscribe	Engine/src/WindowEventManager.cpp	/^void WindowEventSubscriber::subscribe(WindowEventManager::events eventList){$/;"	f	class:Engine::WindowEventSubscriber
+subscribers	Engine/include/WindowEventManager.hpp	/^    static std::vector<std::list<WindowEventSubscriber*> > subscribers;$/;"	m	class:Engine::WindowEventManager
+subscribers	Engine/src/WindowEventManager.cpp	/^std::vector<std::list<WindowEventSubscriber*> > WindowEventManager::subscribers;$/;"	m	class:Engine::WindowEventManager	file:
+targetObject	Engine/include/Camera.hpp	/^    GameObject* targetObject;$/;"	m	class:Engine::Camera
+targetPoint	Engine/include/Camera.hpp	/^    glm::vec3 targetPoint;$/;"	m	class:Engine::Camera
+terrainShader	Game/include/Chunk.hpp	/^    Engine::ShaderProgram* terrainShader;$/;"	m	class:Chunk
+terrainShader	Game/include/Terrain.hpp	/^    Engine::ShaderProgram* terrainShader;$/;"	m	class:Terrain
+tex	Game/include/DebugRenderable.hpp	/^    GLuint tex;$/;"	m	class:DebugRenderable
+texture	Game/include/DebugRenderable.hpp	/^    GLuint texture;$/;"	m	class:DebugRenderable
+time	Engine/include/Animator.hpp	/^    float time;$/;"	m	struct:Engine::Keyframe
+transform	Engine/include/Animator.hpp	/^    BoneTransform transform; \/\/stores current position in local space $/;"	m	class:Engine::Bone
+translate	Engine/src/Components/Transform.cpp	/^void Transform::translate(float x, float y, float z){$/;"	f	class:Transform
+translationVector	Game/include/FirstPersonController.hpp	/^    vec3 translationVector;$/;"	m	class:FirstPersonController
+translationVector	Game/include/PlayerController.hpp	/^    vec3 translationVector;$/;"	m	class:PlayerController
+unSubscribe	Engine/src/WindowEventManager.cpp	/^void WindowEventSubscriber::unSubscribe(WindowEventManager::events eventList){$/;"	f	class:Engine::WindowEventSubscriber
+unbind	Engine/src/VAO.cpp	/^void VAO::unbind() const{$/;"	f	class:VAO
+unsubscribe	Engine/src/WindowEventManager.cpp	/^void WindowEventManager::unsubscribe(events eventList, WindowEventSubscriber* subscriber){$/;"	f	class:Engine::WindowEventManager
+up	Engine/include/Transform.hpp	/^    glm::vec3 up;$/;"	m	class:Engine::Transform
+update	Engine/include/Component.hpp	/^    virtual void update(){return;}$/;"	f	class:Engine::Component
+update	Engine/include/Game.hpp	/^    virtual void update(){return;};$/;"	f	class:Engine::Game
+update	Engine/src/CollideableManager.cpp	/^void CollideableManager::update(){$/;"	f	class:CollideableManager
+update	Engine/src/Components/Animator.cpp	/^void Animator::update(){$/;"	f	class:Animator
+update	Engine/src/Components/Collider.cpp	/^void Collider::update(){$/;"	f	class:Collider
+update	Engine/src/GameObject.cpp	/^void GameObject::update(){$/;"	f	class:GameObject
+update	Engine/src/Time.cpp	/^void Time::update(){$/;"	f	class:Time
+update	Engine/src/Window.cpp	/^void Window::update() const {$/;"	f	class:Window
+update	Game/src/Components/FirstPersonController.cpp	/^void FirstPersonController::update(){$/;"	f	class:FirstPersonController
+update	Game/src/Components/PlayerController.cpp	/^void PlayerController::update(){$/;"	f	class:PlayerController
+update	Game/src/MyGame.cpp	/^void MyGame::update(){$/;"	f	class:MyGame
+updateAspect	Engine/src/Components/Camera.cpp	/^void Camera::updateAspect(float _width, float _height){$/;"	f	class:Camera
+updateBone	Engine/src/Components/Animator.cpp	/^void Animator::updateBone(Bone* bone,glm::mat4 parent,std::vector<BoneTransform> pose){$/;"	f	class:Animator
+updateChunk	Game/src/Components/Chunk.cpp	/^void Chunk::updateChunk(){$/;"	f	class:Chunk
+updateDefaultBone	Engine/src/Components/Animator.cpp	/^void Animator::updateDefaultBone(Bone* bone, glm::mat4 parent){$/;"	f	class:Animator
+vao	Engine/include/Renderable.hpp	/^    VAO* vao;$/;"	m	class:Engine::Renderable
+vao	Game/include/DebugRenderable.hpp	/^    Engine::VAO* vao;$/;"	m	class:DebugRenderable
+vaoID	Engine/include/VAO.hpp	/^    GLuint vaoID;$/;"	m	class:Engine::VAO
+vbos	Engine/include/VAO.hpp	/^    std::vector<GLuint> vbos;$/;"	m	class:Engine::VAO
+vertexCount	Engine/include/VAO.hpp	/^    int vertexCount;$/;"	m	class:Engine::VAO
+verts	Engine/include/Collider.hpp	/^    glm::vec3 verts[8];$/;"	m	class:Engine::Collider
+viewDirection	Engine/include/Camera.hpp	/^    glm::vec3 viewDirection;$/;"	m	class:Engine::Camera
+viewMatrix	Engine/include/Camera.hpp	/^    glm::mat4 viewMatrix;$/;"	m	class:Engine::Camera
+width	Engine/include/Camera.hpp	/^    float width, height;$/;"	m	class:Engine::Camera
+width	Engine/include/Window.hpp	/^    int width, height;$/;"	m	class:Engine::Window
+win	Engine/include/Game.hpp	/^    Window* win;$/;"	m	class:Engine::Game
+window	Engine/include/Window.hpp	/^    GLFWwindow* window;$/;"	m	class:Engine::Window
+window	Engine/include/WindowEventManager.hpp	/^    static GLFWwindow* window;$/;"	m	class:Engine::WindowEventManager
+window	Engine/src/WindowEventManager.cpp	/^GLFWwindow* WindowEventManager::window;$/;"	m	class:Engine::WindowEventManager	file:
+windowResizeCallback	Engine/src/WindowEventManager.cpp	/^void windowResizeCallback(GLFWwindow* window, int width, int height){$/;"	f	namespace:Engine
+~Chunk	Game/include/Chunk.hpp	/^    virtual ~Chunk(){};$/;"	f	class:Chunk
+~Collider	Engine/include/Collider.hpp	/^    ~Collider(){return;}$/;"	f	class:Engine::Collider
+~Component	Engine/include/Component.hpp	/^    virtual ~Component(){}$/;"	f	class:Engine::Component
+~DebugRenderable	Game/src/Components/DebugRenderable.cpp	/^DebugRenderable::~DebugRenderable(){$/;"	f	class:DebugRenderable
+~GameObject	Engine/src/GameObject.cpp	/^GameObject::~GameObject(){$/;"	f	class:GameObject
+~Renderable	Engine/include/Renderable.hpp	/^    virtual ~Renderable(){}$/;"	f	class:Engine::Renderable
+~ShaderProgram	Engine/src/ShaderProgram.cpp	/^ShaderProgram::~ShaderProgram(){$/;"	f	class:ShaderProgram
+~Terrain	Game/include/Terrain.hpp	/^    virtual ~Terrain(){};$/;"	f	class:Terrain
+~VAO	Engine/src/VAO.cpp	/^VAO::~VAO(){$/;"	f	class:VAO
+~Window	Engine/include/Window.hpp	/^    ~Window(){};$/;"	f	class:Engine::Window
