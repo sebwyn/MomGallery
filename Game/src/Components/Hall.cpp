@@ -15,7 +15,7 @@ Engine::VAO* Hall::mesh = 0;
 
 Hall::Hall(float _x, float _y, float _z, bool _facesZ, int _type)
  : Component("hall"), x(_x), y(_y), z(_z), facesZ(_facesZ), type(_type){
-    std::cout << "making hall" << std::endl;
+    //std::cout << "making hall" << std::endl;
 }
 
 void Hall::start(){
@@ -54,12 +54,12 @@ bool Hall::doesCollide(Engine::GameObject* obj){
     }
     if(min.x < oPos.x && oPos.x < max.x){
         if(min.z < oPos.z && oPos.z < max.z){
-            std::cout << "Collided With Hall" << std::endl;
+            /*std::cout << "Collided With Hall" << std::endl;
             std::cout << "Max: " << max.x << " " << max.z <<std::endl;
             std::cout << "Min: " << min.x << " " << min.z <<std::endl;
             std::cout << "Camera: " << oPos.x << " " << oPos.z << std::endl;
             std::cout << "Hall: " << mPos.x << " " << mPos.z << std::endl;
-            return true;
+            */return true;
         }
     }
     return false;

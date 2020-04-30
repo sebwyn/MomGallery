@@ -120,7 +120,7 @@ GLuint ShaderProgram::loadShader(const char* vPath, const char* fPath, const cha
     if(varyings){
         glTransformFeedbackVaryings(ProgramID, count, varyings, GL_SEPARATE_ATTRIBS); 
     }
-	if(hasGeo){
+    if(hasGeo){
         geometryShaderID = compileShader(GL_GEOMETRY_SHADER, gPath);
         if(geometryShaderID == 0){
             return 0;    

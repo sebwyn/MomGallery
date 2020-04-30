@@ -48,7 +48,6 @@ void Gallery::start(){
 
 void Gallery::update(){
     Room* cRoom = (Room*)currentRoom->getComponent("room");
-    //std::cout << inHall << std::endl;
     if(inHall){
         Room* nRoom = (Room*)nextRoom->getComponent("room");
         if(cRoom->doesCollide(player)){
@@ -108,7 +107,6 @@ void Gallery::update(){
                 //move nextRoom to point to the correct next room
                 for(auto roomObj : currentRooms){
                     Room* r = (Room*)roomObj->getComponent("room");
-                    std::cout << r->type << " " << hall->type << std::endl;
                     if(r->type == hall->type){
                         nextRoom = roomObj;
                         break;
@@ -116,7 +114,6 @@ void Gallery::update(){
                 }
                 
                 //might want to clear here
-                std::cout << nextRoom << std::endl;
                 genHalls(nextRoom); 
                 break;
             }
@@ -181,7 +178,6 @@ void Gallery::genHalls(Engine::GameObject* room){
             int hx = roomPos.x + hallX[i] * (Room::width/2 + Hall::length/2); 
             int hy = roomPos.y;
             int hz = roomPos.z + hallZ[i] * (Room::width/2 + Hall::length/2);
-            std::cout << hx << " " << hz << std::endl;    
             makeHall(hx, hy, hz, facesZ[i], i);
         }
     }

@@ -14,7 +14,7 @@ Engine::VAO* Room::mesh = 0;
 
 Room::Room(float _x, float _y, float _z, int _type)
  : Component("room"), x(_x), y(_y), z(_z), type(_type) {
-    std::cout << "Making Room" << std::endl;
+    //std::cout << "Making Room" << std::endl;
 }
 
 void Room::start(){
